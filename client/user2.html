@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>huangyayayaya</title>
+    <style>
+        .chatRoom {
+            width: 500px;
+            height: 500px;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        .title{
+            text-align: center;
+            height: 30px;
+            border-bottom: 1px  solid brown;
+        }
+        .content{
+            width: 500px;
+            height: 350px;
+            border-bottom: 1px  solid brown;
+        }
+        textarea{
+            width: 495px;
+            height: 100px;
+            border: none;
+        }
+        .input{
+            position: relative;
+
+        }
+        button{
+            position: absolute;
+            right:0;
+            bottom: 5px;
+            width: 501px;
+            height: 25px;
+            border: 1px solid;
+            background-color: #0074D9;
+        }
+
+        ul li{
+            list-style: none;
+            padding-right: 10px;
+        }
+        .left{
+            color:black;
+        }
+        .right{
+            text-align: right;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="chatRoom">
+    <div class="title">heheheyuanqing 's chatroom</div>
+    <div class="content">
+        <ul>
+
+        </ul>
+    </div>
+    <div class="input">
+        <textarea id="msg"></textarea>
+        <button>SEND</button>
+
+    </div>
+</div>
+<script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="user2_req.js"></script>
+</body>
+</html>
